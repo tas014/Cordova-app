@@ -1,0 +1,192 @@
+@keyframes blink {
+    0% {
+        border-color: #27DEF2;
+        color: #27DEF2;
+	}
+	50% {
+		border-color: #FFFF05;
+        color: #FFFF05;
+	}
+	100% {
+		border-color: #F205B3;
+        color: #F205B3;
+	}
+}
+
+table{
+    border-collapse: collapse;
+    width: 50%;
+}
+
+header {
+	min-height: 15vh;
+    background-color: black;
+    margin-top: 3%;
+}
+
+.totalcenter {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.totalcenter a {
+	text-decoration: none;
+	color:white;
+	font-size: 2em;
+}
+
+.percenter {
+    width: 20%;
+    margin: 15vh 0 0 0;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.avoid {
+    display: none;
+}
+
+b {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+
+td{
+    border-style: dotted;
+    border-width: 0.25rem;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    font-size: 3rem;
+    border-color: rgb(255, 255, 255);
+}
+
+td:hover{
+    background-color: #202020
+}
+
+/*FORMATO TABLA*/
+.cruz, #p1{
+    color: #F205B3;
+}
+
+.circulo, #p2{
+    color: #27DEF2;
+}
+
+.combinacionGanadora{
+    /*animation: blink 1s ease infinite;
+    animation-direction: alternate;*/
+    color: #FFFF05
+}
+.restantes{
+    font-size: 1.5rem;
+    opacity: 0.2;
+}
+
+/*----------------------------------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+}
+
+div{
+    margin: 0 auto;
+    height: auto;
+    max-width: 45rem;
+    color: white;/*#ff7159;*/
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*----------------------------------------------------------*/
+
+h2{
+    min-width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 1.5rem;
+}
+
+h1{
+    color: #FFFF05;
+    text-align: center;
+    animation: blink 3s ease infinite;
+    animation-direction: alternate;
+}
+
+p{
+    margin: 1rem 25%;
+    line-height: 140%;
+    text-align: center;
+}
+
+.vertiflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 20em; /* puede ir al lado del cuadro*/
+   /* margin: 2rem calc(35% - 6px); */
+    padding: 1.2rem 1rem; 
+    border-style: dotted;
+    border-width: 0.25rem;
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    border-color: #FFFF05;
+    color: #FFFF05;
+}
+
+.horiflex {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 44vh;
+    margin-top:4%;
+}
+
+@media only screen and (max-width: 768px) {
+    * {margin-top: 7%;}
+
+    html {font-size: 14px;}
+
+    table {width: 85%;}
+
+    button {width: 60%;}
+
+    p {
+        margin:0;
+        margin-bottom: 3%;
+    }
+
+    .percenter {
+        margin:0;
+        width: 60%;
+    }
+
+    .horiflex {
+        height: auto;
+    }
+
+    div {height: auto;}
+}

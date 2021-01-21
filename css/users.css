@@ -1,0 +1,186 @@
+.nodisplay {
+    display: none;
+}
+
+h1 {
+    margin-right: 10%;
+}
+
+h1+button {
+    margin-right: 10%;
+    height: 2em;
+}
+
+#userlist {
+    display: flex;
+    flex-flow: column;
+    min-height: 80vh;
+    background-color: snow;
+    width: 100%;
+}
+
+.horiflex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.vertiflex {
+    display: flex;
+    flex-flow: column;
+}
+
+.justifycenter {
+    justify-content: center;
+}
+
+.justifybetween {
+    justify-content: space-between;
+}
+
+.aligncenter {
+    align-items: center;
+}
+
+.centerer {
+    width: 40%;
+    margin:0 auto;
+}
+
+.generalwidth {
+    width: 100%;
+}
+
+article > img {
+    width: 4em;
+}
+
+img + span {
+    width: 50%;
+}
+
+span+span {
+    width: 20%;
+}
+
+div>span {
+    font-size: 1em;
+    text-align: center;
+}
+
+.creator {
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form div {
+    height: 8vh;
+    width: 70%;
+}
+
+form img {
+    width: 5em;
+}
+
+.formbackground {
+    background-color: whitesmoke;
+    width: 50%;
+    height: 80vh;
+}
+
+form {
+    z-index: 4;
+    background-color: rgba(255, 0, 0, 0.3);
+    width: 80%;
+    height: 50vh;
+}
+
+div input {
+    height: 3vh;
+}
+
+.autowidth {
+    width: auto;
+}
+
+h5 {
+    width: 50%;
+    text-align: center;
+}
+
+.edit {
+    z-index: 2;
+}
+
+.creatorconfirm {
+    margin-top: 3%;
+    font-size: 2em;
+    width: 40%;
+    height: 10vh;
+}
+
+.graybackground {
+    background-color: whitesmoke;
+}
+
+.userdiv {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    background-color: aqua;
+    border-bottom-style:solid;
+    border-bottom-color:black;
+    border-bottom-width: 3px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileIMG {
+    width: 5em;
+    height: 5em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profilename {
+    width: 30%;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.profilenick {
+    width: 30%;
+    text-align:center;
+    font-size: 1.6em;
+}
+
+.theading {
+    display: flex;
+    width: 70%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@media only screen and (max-width: 768px) {
+    html {font-size: 14px;}
+    .centerer {
+        width: 90%;
+    }
+    .formbackground {
+        width: 90%;
+    }
+
+    .creatorconfirm {
+        width: 60%;
+    }
+}
